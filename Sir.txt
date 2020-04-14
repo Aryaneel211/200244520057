@@ -1,0 +1,55 @@
+git status
+
+
+C:\Users\Administrator\vitademo> git add -A
+
+git add -A //add all the changes to the version control
+
+
+git commit -m "this is the first version of the code" // -m message
+
+
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Administrator@EC2AMAZ-JQ3OK0U.(none)')
+
+
+
+
+
+  git config --global user.email "pk.tripathi700@gmail.com"
+  git config --global user.name "masterpradeep"
+
+C:\Users\Administrator\vitademo>git commit -m "this is the first version of the code"
+[master 20204c4] this is the first version of the code
+ 1 file changed, 2 insertions(+)
+ create mode 100644 demo.txt
+
+
+
+
+
+git push // upload code to github.com repo
+git pull  // download code from github.com to laptop/desktop
+
+
+
+all above command one times:
+
+
+
+git add -A
+
+git commit -m "your message"
+
+
+git push
