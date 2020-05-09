@@ -1,0 +1,34 @@
+# Day 1
+
+## Cloud
+
+**Cloud** is compute resource as rent in which we have to pay for whatever we use.Cloud computing is the ability to access and manipulate files from a site.
+
+
+  We need an internet connection to access the files (Facebook, Twitter and Instagram are all examples of
+cloud-based applications).Consider a cloud as computers with unlimited storage with high processing speed located in specific areas around the globe.
+
+* Cloud service providers offer three types of cloud. Private, public and hybrid. 
+
+    A. Private is only accessible within an organisation. 
+        
+    B. Public is accessible to the general public.
+        
+    C. Hybrid is accessible to both.
+
+### Advantages:
+1. **Cost efficiency**: 
+    
+    The biggest reason behind companies shifting to Cloud Computing is that it takes less cost than any on-premise technology.
+
+2. **High speed**: 
+   
+   Cloud Computing let us deploy the service quickly.
+
+3. **Excellent accessibility**: 
+   
+   Storing information in the cloud allows us to access it anywhere and anytime.
+
+4. **Manageability**: 
+   
+   Cloud Computing eliminates the need for and maintenance since the service provider ensures guaranteed delivery of our service and also takes care of all the maintenance.
