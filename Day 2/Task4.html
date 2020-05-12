@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to see name in Font size 7.</p>
+
+<button onclick="myFunction()">Click!!</button>
+
+<p id="demo">Neel Deshpande</p>
+
+<script>
+ var str = "Neel Deshpande";
+ document.getElementById("demo").innerHTML =str.fontsize(4);
+function myFunction() {
+  var result = str.fontsize(7);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
