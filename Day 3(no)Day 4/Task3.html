@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Task 3</h1>
+<h2>Square and Cube</h2>
+<p id = "c3"></p>
+<p id = "s2"></p>
+	<script>
+		class Task
+			{
+			static Cube(a)
+				{
+				return a * a * a;
+				}
+
+			static Sqr(b)
+				{
+				return b * b;
+				}
+			}
+			document.getElementById("c3").innerHTML = "<i>Cube of 10 :</i>" + Task.Cube(10);
+			document.getElementById("s2").innerHTML = "<i>Square of 100 :</i>" + Task.Sqr(100);
+	</script>
+</body>
+</html>

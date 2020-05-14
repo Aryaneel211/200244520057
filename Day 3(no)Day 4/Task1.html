@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Task 1</h1>
+<h2>Find factorial:</h2>
+
+Number:&nbsp &nbsp <input type = "text" id = "no"> <br/><br/>
+<button type = "button"  onclick = fact()>Factorial</button>
+</input><input type = "text" id = "sec"></input>
+	<script>
+		var fact = () =>
+		{
+			var f, fact = 1;
+			f = Number(document.getElementById("no").value);
+			for(var i = 1; i <= f; i++)
+			{				
+			fact = fact * i;
+			}
+			document.getElementById("sec").value = fact;
+			}
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Task 4</h1>
+<h3>Account</h3>
+<p id = "Acc"></p>
+	<script>
+		class account
+			{
+				constructor(name,bal)
+					{
+						this.name = name;
+						this.balance = 1000;
+					}
+
+				deposit(a)
+					{
+						this.balance = this.balance+a;
+					}
+
+			}
+		class curAccount extends account
+			{
+				constructor(name,bal)
+					{
+						super(name,bal);
+					}
+				
+				withdraw(a)
+					{
+						this.balance = this.balance-a;
+					}
+				
+				show()
+					{
+						return "<b>Name :</b>"+" " + this.name+"</br></br>"+"<i><b>Total balance :</b></i>  1600 ;<br/><br/>After the withdrawal of <b>800</b>,<br/><br/> <i><b>Balance is:</b></i>" + this.balance;
+					}
+			}
+
+			obj = new curAccount("Neel");
+			obj.deposit(600);
+			obj.withdraw(800);
+			document.getElementById("Acc").innerHTML = obj.show();
+	</script>
+</body>
+</html>
