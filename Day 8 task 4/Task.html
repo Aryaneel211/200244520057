@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task VITA</title>
+        <link rel="stylesheet" type="text/css" href="register.css">
+    </head>
+
+    <body bgcolor="#ffff80">
+        <form action="#" method="post" onsubmit="return valid()">
+            <h2>Registere Here</h2>
+                <label  for="r1" id="un">User ID :&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="uid" id="r1"><br/></label>
+                
+                <label  for="r2" id="pwd">Password :
+                <input type="password" name="pass" id="r2"><br/></label>
+
+                <label  for="r3" id="mn">Mob. No :&nbsp;&nbsp;
+                <input type="text" name="mno" id="r3"><br/></label>
+
+                <label  for="r4" id="add">Address :&nbsp;&nbsp;
+                <textarea rows="4" cols="30" name="Add" id="r4"></textarea><br/></label>
+
+                <label  for="r5" id="fm">Age :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="age" id="r5"><br/></label>
+
+                <button type="submit" value="Submit" id="button">Register</button>
+        </form>
+        <script>
+            function valid()
+            {
+
+                var user = document.getElementById("r1").value;
+                var pass = document.getElementById("r2").value; 
+                var mob = document.getElementById("r3").value;
+                var add = document.getElementById("r4").value;
+                var age = document.getElementById("r5").value;
+            if(user == "")
+                {
+                    //document.getElementById("un").innerHTML = user;
+                    alert("Please provide your User ID");
+                    return false;
+                }
+        
+            if((user.length < 3) || (user.length >= 15))
+                {
+                    //document.getElementById("un").innerHTML = user;
+                    alert("UserId must have minimum 3 and maximum 15 characters");
+                    return false;
+                }
+        
+            if(pass == "")
+                {
+                    //document.getElementById("pwd").innerHTML=pass;
+                    alert("Password please!!!");
+                    return false;
+                }
+            
+            if(pass.length <= 8)
+                {
+                    //document.getElementById("pwd").innerHTML = pass;
+                    alert("Password must be of minimum 8 characters");
+                    return false;
+                }
+
+            if(mob == "")
+                {
+                    //document.getElementById("mn").innerHTML = mob;
+                    alert("Please enter your mobile number");
+                    return false;
+                }
+            
+            if(isNaN(mob))
+                {
+                    //document.getElementById("mn").innerHTML = mob;
+                    alert("Mobile number should contain numbers");
+                    return false;
+                }
+            
+            if(mob.length != 10)
+                {
+                    //document.getElementById("mn").innerHTML = mob;
+                    alert("Mobile number should contain 10 number");
+                    return false;
+                }
+            if(add == "")
+                {
+                    //document.getElementById("add").innerHTML = add;
+                    alert("Please give your address");
+                    return false;
+                }
+        
+            if(age == "")
+                {
+                    //document.getElementById("fm").innerHTML = age;
+                    alert("Please type your age");
+                    return false;
+                }
+            
+            if((age <= 18) || (age >= 100))
+                {
+                    alert("Age must be between 18 to 100");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
+
