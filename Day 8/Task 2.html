@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><title>Calculate total and percentage.</title></head>
+
+<body>
+
+<h1>Task 2</h1>
+<h3>Student Details :</h3>
+
+<p id = "demo"></p>
+<p id = "dem"></p>
+
+<script>
+class student{
+    constructor(rollno,name,marks1,marks2,marks3) {
+            this.rollno = rollno;
+            this.name = name;
+            this.marks1 = marks1;
+            this.marks2 = marks2;
+            this.marks3 = marks3;
+            this.total = function()
+                {
+                    return this.marks1 + this.marks2 + this.marks3;
+                }
+            this.percentage = function()
+                {
+                    return this.total() * 100/300;
+                }
+        }
+    }
+
+    var a = new student(1, "Neel", 100, 90, 100);
+    document.getElementById("demo").innerHTML =
+    "Roll No: " + a.rollno + "<br>" + "Name: " + a.name + "<br>" + "Marks: " + a.marks1 + ", " + a.marks2 +
+    ", " + a.marks3 + "<br>" + "Total Marks: " + a.total() + "<br>" + "Percentage:" + a.percentage() + "<br>" + "<br>"; 
+ 
+    var b = new student(2, "Aarya", 99, 100, 100);
+    document.getElementById("dem").innerHTML =
+    "Roll No: " + b.rollno + "<br>" + "Name: " + b.name + "<br>" + "Marks: " + b.marks1 + ", " + b.marks2 +
+    ", " + b.marks3 + "<br>" + "Total Marks: " + b.total() + "<br>" + "Percentage:" + b.percentage() + "<br>" + "<br>"; 
+</script>
+
+</body>
+</html>

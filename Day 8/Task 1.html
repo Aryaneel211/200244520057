@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head><title>Employee Details (Task1 : Day 8)</title></head>
+
+<html>
+<body>
+
+<h1>Task 1</h1>
+<h3>Employee Details :</h3>
+
+<p id = "emp"></p>
+<p id = "emp1"></p>
+
+<script>
+        class Employee {
+            constructor(id,name,salary) {
+                    this.id = id;
+                    this.name = name;
+                    this.salary = salary;
+                }
+                
+                get Id(){
+                    return this.id;
+                }
+                set Id(i){
+                    this.id = i;
+                }
+                
+                get Name(){
+                    return this.name;
+                }
+                set Name(n){
+                    this.name = n;
+                }
+                
+                get Salary(){
+                    return this.salary;
+                }
+                set Salary(s){
+                    this.salary=s;
+                }
+
+                Net_Salary(){
+                    var net = (this.salary*10)/100;
+                    return net = this.salary - net;
+                }
+            }
+
+employee1 = new Employee(1 ,"Neel" ,50000);
+document.getElementById("emp").innerHTML = "Id : " + employee1.id + "<br>" + "Name : " + employee1.name + "<br>" + "Salary : " + employee1.salary + "<br>" + "Net Salary : " + employee1.Net_Salary(100000) + "<br>" + "<br>";
+//window.alert(employee1.Net_Salary());
+
+employee2 = new Employee(2 ,"Lambodhar",55000);
+document.getElementById("emp1").innerHTML = "Id : " + employee2.id + "<br>" + "Name : " + employee2.name + "<br>" + "Salary : " + employee2.salary + "<br>" + "Net Salary : " + employee2.Net_Salary(100000) + "<br>" + "<br>";
+//window.alert(employee2.Net_Salary());
+</script>
+
+</body>
+</html>
