@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>Self Invoking Function (Task 2 : Day 9)</title></head>
+
+<body>
+
+<h1>Task 2</h1>
+<h3>Return square of a number using self invoking function :</h3>
+
+<p id="SIF"></p>
+
+<script>
+    (function square (a) {
+        document.getElementById("SIF").innerHTML = "<b>Square :<b>" + " " + a * a;
+    })(15);
+</script>
+
+</body>
+</html>
