@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password validation</title>       
+    </head>
+    
+    <body>
+        <h1>Task 11</h1>
+        <h3>Onchange event check whether the password is valid or not and if not then display specific an error message :</h3>
+        <h4>Enter a password which contains atleast one capital letter, one digit and one special character.</h4>
+        </br></br>
+        <b>Password : </b><input onchange = "check(this)" placeholder = "Password"><span style = "color: red;" id = "warn"></span></br></br>
+        <button type = "button" onclick = "check()">Click!!</button>
+
+        <script>
+            function check(id)
+            {
+                var cond1 = false; 
+                var cond2 = false;
+                var cond3 = false;
+                var text = id.value;
+                var warnIt = "";
+
+
+                //This must have at least one capital character
+                var run1 = /[A-Z]/g;
+                if(run1.test(text))
+                    {
+                        cond1 = true;
+                    }
+                else
+                    {
+                        cond1 = false;
+                    }
+
+                //This must have at least one digit
+                var run2 = /[0-9]/;
+                if(run2.test(text))
+                    {
+                        cond2 = true;
+                    } 
+                else
+                    {
+                        cond2 = false; 
+                    }
+
+                //This must have at least 1 special symbol
+                var run3 = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+                
+                if(run3.test(text))
+                    {
+                        cond3 = true;
+                    }
+                else
+                    {
+                        cond3 = false;
+                    }
+
+                if(!cond1)
+                    {
+                        warnIt += "<br/></br>Must have at least one capital letter<br/>";
+                    }
+                
+                if(!cond2)
+                    {
+                        warnIt += "<br/></br>Must have at least one digit<br/>";
+                    }   
+                
+                if(!cond3)
+                    {
+                        warnIt += "<br/></br>Must have at least one symbol<br/>";
+                    }
+                
+                if(cond1 && cond2 && cond3)
+                    {
+                        warnIt = "";
+                    }
+
+                document.getElementById("warn").innerHTML = warnIt;
+
+            }
+        </script>
+
+    </body>
+
+</html>

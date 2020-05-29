@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show's error if text box kept empty HERE!!</title>
+    </head>
+    
+    <body>
+        <h1>Task 10</h1>
+        <h3>If the Text Input is kept EMPTY!...Then, this show's ERROR!! :</h3>
+        
+        <b>Enter Text here : </b><input type = "text" id = "1" placeholder = "Enter Text">
+        <span id = "2"></span><br><br>
+        <button type = "button" onclick = "myFunction()">Click!!</button>
+        
+
+        <script>
+            function myFunction()
+            {
+                var alpha = document.getElementById("1").value;
+                if(alpha == 0)
+                {
+                    try
+                    {
+                        throw "<b>Error</b>, Please enter right Input.";
+                    }
+                    catch(err)
+                    {
+                        document.write(err);
+                    }
+                }
+                else 
+                {
+                    document.getElementById("2").innerHTML = alpha;
+                }
+            }
+        </script>
+    </body>
+</html>

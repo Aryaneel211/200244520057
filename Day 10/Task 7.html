@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Detect No. of P_tags and make ther background "Blue" (Task 7 : Day 10)</title>
+    </head>
+        <body>
+            <h1>Task 7</h1>
+            <h3>Detect No. of P_tags and make ther background "Blue" :</h3>
+        <p id = "1">Life is full of ups and downs. I know this is a cliché, but this phrase summarizes my whole existence. 
+        Sometimes my life is fun, happy and almost enviable and at other times my life is boring, sad, uninspiring 
+        and sometimes downright disgusting. I know I am not perfect, I have never tried to be, but one thing is true – 
+        <b>I AM WHO I AM.</b></p>
+
+        <p id = "2">My name is Neel S. Deshpande. I live in Amravati. I am an Indian. I am the first born of my parent.
+        We are four in number and I have always felt responsible for my family. 
+        I love my parents and siblings dearly and the feeling is mutual.</p>
+
+        <p id = "3">I am not perfect and I have never claimed to be. However, I know what I want out of life and I pursue it 
+        doggedly. I am a focused person and it has often been said of me that I am quite focused-driven and that I
+        have a one-track mind. I don’t know if I should consider that as a compliment or not.</p>
+
+        <p id = "4">I love meeting people and I love making friends with people who are social. I am who I am, and I make no
+        excuses for how I have turned out.</p>
+
+            <button onclick="myself()">Click!!</button>
+
+            <p id="ptag"></p>
+
+            <script>
+                function myself()
+                {
+                    var a = document.getElementsByTagName("p");
+                    for(let i = 0; i < a.length; i++)
+                    {
+                        a[i].style.background = "blue";
+                    }
+                    var b = a.length;
+                    document.getElementById("ptag").innerHTML = "Total p_tags available here are " + b;
+                }
+                
+            </script>
+
+        </body>
+</html>

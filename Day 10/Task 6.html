@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Addition and substraction using radio (Task 6 : Day 10)</title>
+    </head>
+    
+        <body>
+            <h1>Task 6</h1>
+            <h3>Addition and Substration using radio selection :</h3>
+            <form method = "post" action = "#">
+                <b>First Digit :</b><input type = "number" id="1" placeholder = "Enter a number"> &nbsp;&nbsp;            
+                <b>Second Digit :</b><input type = "number" id = "2" placeholder = "Enter a number"> &nbsp;&nbsp;
+                <b>Answer is :</b><input type = "text" id = "3" placeholder = "Answer"><br/></br>
+                <input type = "radio" value = "radio" name = "math" onClick="add()"><b>Add</b>
+                <input type = "radio" value = "radio" name = "math" onClick = "subtract()"><b>Subtract</b>
+            </form>
+            <script>
+                function add()
+                {
+                    var alpha = parseInt(document.getElementById("1").value);
+                    var beta = parseInt(document.getElementById("2").value);
+                    var dull = document.getElementById("3");
+                    var gamma = alpha+beta;
+                    
+                    dull.value = gamma;
+                }
+                function subtract()
+                {
+                    var alpha = document.getElementById("1").value;
+                    var beta = document.getElementById("2").value;
+                    var gamma = alpha-beta;
+                    var dull = document.getElementById("3");
+                    dull.value = gamma;
+                }
+            </script>
+
+    </body>
+
+</html>

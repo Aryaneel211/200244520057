@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>On change event display text in text box on span tag (Task 9 : Day 10)</title>
+        </head>
+        <body>
+            <h1>Task 9</h1>
+            <h2>On change event display text in text box on span tag :</h2>
+            <b>Enter text : </b><input type = "text" id = "1" placeholder = "Enter text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>Span : </b><span id = "2"></span><br><br>
+                <button type = "button" onclick = "myFunction()">Click!!</button>
+                <script>
+                    function myFunction()
+                    {
+                        var a = document.getElementById("1").value;
+                        document.getElementById("2").innerHTML = a;
+                    }
+                </script>
+        </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Remove the 1 Name from list on every click (Task 8 : Day 10)</title>
+	</head>
+		<body>
+			<h1>Task 8</h1>
+			<h3>Remove the 1 Name from list on every click :</h3>
+
+			<h2>My Friends are </h2>
+
+				<ol id = "rem">
+				<li>Neel</li>
+				<li>Amit</li>
+				<li>Saurabh</li>
+				<li>Rahi</li>
+				<li>Aarya</li>
+				<li>Nirmal</li>
+				<li>Azar</li>
+				</ol>
+				<button onclick = "removeIt()">Remove Name!!</button>
+
+				<script>
+					function removeIt() {
+					var list = document.getElementById("rem");
+					list.removeChild(list.childNodes[0]);
+					}
+				</script>
+		</body>	
+</html>

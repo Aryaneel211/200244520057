@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Changing text colour using checkbox (Task 4 : Day 10)</title>
+    </head>
+    <body>
+        <h1>Task 4</h1>
+        <h3>Changing text colour using different checkbox :</h3>
+        <p><b>Select The colour first and then type in textbox.</b></p>
+        <form method = "post" action = "#">
+            <b>Type here :</b> <input type = "text" id = "1" name = "text" value = "Neel Deshpande"><br/></br>
+            <input type = "radio" name = "color" value = "radio" onClick = "myFunction('o')"><b>Orange</b>
+            <input type = "radio" name = "color" value = "radio" onClick = "myFunction('r')"><b>Red</b>
+            <input type = "radio" name = "color" value = "radio" onClick = "myFunction('g')"><b>Green</b>
+        </form>
+	
+    <script>
+        function myFunction(value) {
+        var change = document.getElementById("1").style.color;
+        switch(value)
+        {
+            case 'o':
+                change = "orange";
+            break;
+            case 'r':
+                change = "red";
+            break;
+            case 'g':
+                change = "green";
+            break;
+        }
+        document.getElementById("1").style.color = change;
+        }
+    </script>
+
+    </body>
+
+</html>
