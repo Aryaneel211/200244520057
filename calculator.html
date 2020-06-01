@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device - width, initial - scale = 1">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Calci_Project</title>
+    </head>
+    
+    <body>  
+            <style>
+                h1 {
+                    color : #804200;
+                    font-weight : bolder;
+                    font-size : 40px;
+                    font-family: Impact, Charcoal, sans-serif;
+                }
+
+                body {
+                    background-color : #ffff99;
+                }
+
+                .main_body {
+                    text-align : center;
+                    margin-top : 20px;
+                }
+                
+                table {
+                    margin : auto;
+                    
+                }
+
+                input {
+                    font-size : 25px;
+                    width : 300px;
+                    height : 35px;
+                    border : 5px solid black;
+                    border-radius : 15px;
+                }
+
+                button {
+                    font-size : 20px;
+                    background-color : #ff704d;
+                    width : 75px;
+                    height : 40px;
+                    border-radius : 15px;
+                    margin : 7px;
+                    border : solid;
+                }
+
+                .program {
+                    display : inline-block;
+                    background-color : #ff9933;
+                    padding : 20px;
+                    border-radius : 30px;
+                }
+
+                .p1 {
+                    font-size : 20px;
+                    font-weight : bold;
+                    color : #001a00;
+                    font-family: "Comic Sans MS", cursive, sans-serif;
+                }
+
+                .fa-instagram {
+                    background: #ff9933;
+                    color: #b30047;
+                }
+            </style>
+
+        <div class = "main_body">
+        <h1>Calculator</h1>
+    
+        <div class = "program">
+        <input type = "text" name = "program" id = "1">
+    
+        <table>
+            <tr>
+            <td><button>(</button></td>
+            <td><button>)</button></td>
+            <td><button>C</button></td>
+            <td><button>%</button></td>
+            </tr>
+    
+            <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button>X</button></td>
+            </tr>
+                                    
+            <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button>-</button></td>
+            </tr>
+
+            <tr>
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button>+</button></td>
+            </tr>
+                                                            
+            <tr>
+            <td><button>0</button></td>
+            <td><button>.</button></td>
+            <td><button>/</button></td>
+            <td><button>=</button></td>
+            </tr>
+        </table>
+
+            <footer>
+                <p class = "p1"><a href = "https://www.instagram.com/aryaneel211/" class = "fa fa-instagram"></a>  Copywrite @ Neel S. Deshpande</p>
+            </footer>                                                        
+        </div>
+        </div>
+    
+        <script>
+            var calci = document.getElementById("1");
+            var touch = document.querySelectorAll("button");
+            var val = "";
+            for(x of touch)
+            {
+                x.addEventListener("click",(a) => { 
+                var buttonvalue = a.target.innerText;
+                if(buttonvalue == "X")
+                {
+                    buttonvalue = "*";
+                    val = val + buttonvalue;
+                    calci.value = val;
+                }
+                else if(buttonvalue == "C")
+                {
+                    val = " ";
+                    calci.value = val;
+                }
+                else if(buttonvalue == "=")
+                {
+                    calci.value = eval(val);
+                }
+                else{
+                    val = val + buttonvalue;
+                    calci.value = val;
+                }         
+            })
+        }   
+        </script>
+
+    </body>
+    
+</html>
