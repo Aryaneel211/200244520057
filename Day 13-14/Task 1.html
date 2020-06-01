@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital Clock</title>       
+    </head>
+    
+    <body>
+        <h1>Task 1</h1>
+        <h3>Display a Digital clock using JavaScript :</h3>
+            <style>
+                body {
+                    background : black;
+                }
+
+                h1,h3 {
+                    color : #0073e6;
+                }
+                .d_clock {
+                    position : absolute;
+                    top : 50%;
+                    left : 50%;
+                    transform : translateX(-50%) translateY(-50%);
+                    color : rgb(40, 99, 112);
+                    font-size : 60px;
+                    font-family : fantasy;
+                    letter-spacing : 7px;
+                }
+            </style>
+
+            <div id = "clock_display" class = "d_clock" onload = "timeN()"></div>
+            
+            <script>
+                function timeN(){
+                    var date = new Date();
+                    var h = date.getHours();            // 0 - 23
+                    var m = date.getMinutes();          // 0 - 59
+                    var s = date.getSeconds();          // 0 - 59
+                    var session = "AM";
+                    
+                    if(h == 0){
+                        h = 12;
+                    }
+                    
+                    if(h > 12){
+                        h = h - 12;
+                        session = "PM";
+                    }
+                    
+                    h = (h < 10) ? "0" + h : h;
+                    m = (m < 10) ? "0" + m : m;
+                    s = (s < 10) ? "0" + s : s;
+                    
+                    var time = h + ":" + m + ":" + s + " " + session;
+                    
+                    document.getElementById("clock_display").innerText = time;
+                    document.getElementById("clock_display").textContent = time;
+                    
+                    setTimeout(timeN, 1000);
+                    
+                }
+
+                timeN();
+            </script>
+    </body>
+
+</html>
