@@ -1,0 +1,30 @@
+ 
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Change the colour On Blur</title>
+        
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script>
+        $(document).ready(function(){
+        $("input").blur(function(){
+        $("input").css("background-color", "grey");})
+
+        $("input").click(function(){
+        $("input").css("background-color", "white");})    
+
+});
+        </script>
+    </head>
+    
+    <body>
+        <h1>Task 4</h1>
+        <h3>Change the Color of textbox on blur :</h3>
+        <br><br>
+        <p><b>Click on textbox and then click anywhere on the screen</b></p>
+
+        <b>Enter your name: </b><input type = "text">
+    </body>
+
+</html>
