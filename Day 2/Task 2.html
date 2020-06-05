@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fade the name on MouseOver</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+            $("#fade").mouseenter(function(){
+            $("#fade").fadeOut("slow");
+            }),
+            $("#1").click(function(){
+            $("#fade").fadeIn("slow");
+            });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <h1>Task 2</h1>
+        <h3>On mouseOver fadeOut the name :</h3></br></br></br>
+
+        <p><b>Click on show button to See the name again after FadeOut!!</b>&nbsp;&nbsp;&nbsp;
+        <button id = "1" type = "button">Show!!</button></p>
+        </br></br>   
+
+        <center>
+            <h1 id = "fade" style = "color:grey;">Neel S. Deshpande</h1></br></br></br></br></br>
+        </center>
+    </body>
+
+</html>

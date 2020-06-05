@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display the name in Slide</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script> 
+            $(document).ready(function(){
+            $("#i1").click(function(){
+                $("#i2").slideToggle("slow");
+            });
+            });
+        </script>
+        <style> 
+            #i2 {
+            padding: 5px;
+            text-align: center;
+            background-color: #5eda8d;
+            border: solid 1px #5eda8d;
+            padding: 35px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Task 3</h1>
+        <h3>OnCLICK, Display the Name inside Slide  :</h3></br>
+
+        <center>
+            <button  type = "button" id = "i1"><b>Click to open and close the slide</b></button>
+        </center>
+        
+        <h3 id="i2">Neel S. Deshpande</h3>
+
+    </body>
+
+</html>

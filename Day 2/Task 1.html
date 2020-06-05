@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Show and Hide the Image</title>
+        
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+            $('#1').on("click",function(){
+            $('#task').toggle('slow');
+            }); });
+        
+        </script>
+    </head>
+    
+    <body>
+        <h1>Task 1</h1>
+        <h3>OnClick show and hide the image using single button(toggle) :</h3>
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+        <center>
+            <img src = "Taskimg.jpg" alt = "Show and Hide Image" id = "task" class = "hidden"/>
+            </br></br>
+            <button type = "button" id = "1" allign = "center">Show and Hide Image</button>
+        </center>
+    </body>
+
+</html>

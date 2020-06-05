@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Increase the size of Image</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <script> 
+            $(document).ready(function(){
+            $("#1").click(function(){
+            $("#task").animate({
+                left: '250px',
+                height: '+=50px',
+                width: '+=50px'
+                });
+            });
+        });
+        </script> 
+    </head>
+    
+    <body>
+        <h1>Task 4</h1>
+        <h3>On Click on the given button, Increase in Size of Image occurs!! :</h3></br>
+        <center>
+            <button type = "button" id = "1" allign = "center">Increase!!</button></br></br>
+            <img src = "Taskimg.jpg" alt = "Show and Hide Image" id = "task" class = "hidden"/>
+        </center>
+
+    </body>
+</html>
