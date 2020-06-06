@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+        <title>On MouseOver remove the border of the Image</title>
+        
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script>
+			$(document).ready(function(){
+			$("img").hover(function(){
+  			$("img").attr("border", "0");
+			},
+			function(){
+  			$("img").attr("border", "5");
+			    });
+			});
+		</script>
+	</head>
+        
+    <body>
+        <style>
+            img {
+                border-color: firebrick;
+            }
+        </style>
+
+        <h1>Task 2</h1>
+        <h3>On MouseOver remove the border of the Image using Jquery :</h3></br></br></br>
+    
+        <center>    
+			<img src = "Taskimg.jpg" border = "5" height = "400" width = "700">
+        </center>
+    
+    </body>
+	
+</html>

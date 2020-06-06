@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Change the colour of text in textarea as per selected colour</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){
+			$("input[name = 'radioColor']").click(function(){
+			var colorName = $("input[name = 'radioColor']:checked").val();
+			$("textarea").css('color',colorName);
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+		<h1>Task 5</h1>
+		<h3>On selection of colour, change the colour of text inside textarea :</h3></br></br>
+		
+	<style>
+		body {
+			background-color: black;
+		}
+
+		h1,h3,label {
+			color: burlywood;
+		}
+
+		input,textarea {
+			background-color: lightgray;
+			font-size: xx-large;
+		}
+	</style>
+	<center>	
+		<label>Select a color : </label>
+		<input type = "radio" name = "radioColor" value = "orange"><label>Orange</label>
+		<input type = "radio" name = "radioColor" value = "green"><label>Green</label>
+		<input type = "radio" name = "radioColor" value = "yellow"><label>Yellow</label>
+		<input type = "radio" name = "radioColor" value = "red"><label>Red</label><br/></br>
+		
+		<textarea cols = "50" rows = "5" placeholder = "Select the colour and type here!"></textarea>
+	</center>
+	</body>
+	
+</html>

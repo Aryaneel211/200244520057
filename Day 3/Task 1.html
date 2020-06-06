@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Copy the text in first textbox to second</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+            $("button").click(function(){
+            $("#t2").val($("#t1").val());
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <h1>Task 1</h1>
+        <h3>Copy the text in first textbox to second using Jquery :</h3></br></br></br>
+        <center>			
+            <p><b>Enter the text in Input_Box and then click on  <i>CopyIt!!</i>  button to get the Output</b></p></br></br>
+            <label><b>Input_Box : </b></label><input id = "t1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label><b>Output_Box : </b></label><input id = "t2" readonly><br><br>
+            <button>CopyIt!!</button>
+        </center>
+    </body>
+
+</html>

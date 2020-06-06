@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+        <title>Add the fruit in list</title>
+        
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+            $("input").click(function(){
+            var fruitName =$("input:checked").val();
+            $("ol").append("<li>" + fruitName + "</li>");
+            });});
+		</script>
+	</head>
+        
+    <body>
+        <h1>Task 3</h1>
+        <h3>Add the fruit in list by selecting checkbox, using Jquery :</h3></br></br>
+        
+        <b><ol>
+            <li>Mango</li>
+            <li>Apple</li>
+            <li>Avacados</li>
+        </ol></b>
+        </br></br>
+        <h3><b>You can add these Fruit by selecting them : </b></h3>
+        <label><b>Muskmelon</b></label>
+        <input type = "radio" name = "fruit" value = "Muskmelon">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label><b>Watermelon</b></label>&nbsp;&nbsp;
+        <input type = "radio" name = "fruit" value = "Watermelon"></br>
+
+        <label><b>Kiwi</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type = "radio" name = "fruit" value = "Kiwi">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label><b>Bananas</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type = "radio" name = "fruit" value = "Bananas"></br>
+
+        <label><b>Cherry</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type = "radio" name = "fruit" value = "Cherry">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <label><b>Blackberries</b></label>&nbsp;
+        <input type = "radio" name = "fruit" value = "Blackberries">
+    
+    </body>
+	
+</html>
